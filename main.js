@@ -22,7 +22,7 @@ document.querySelector('.check').addEventListener('click', function () {
   if (percentage >= 50) {
     document.querySelector(
       '.message-paragraph'
-    ).textContent = `The chance of a relationship working out between ${firstName} and ${crushName} is not very big, but a relationship is very well possible, if the two of you really want it to, and are prepared to make some sacrifices for it. You'll have to spend a lot of quality time together. You must be aware of the fact that this relationship might not work out at all, no matter how much time you invest in it.`;
+    ).textContent = `The chances of a relationship working out between ${firstName} and ${crushName} is not very big, but a relationship is very well possible, if the two of you really want it to, and are prepared to make some sacrifices for it. You'll have to spend a lot of quality time together. You must be aware of the fact that this relationship might not work out at all, no matter how much time you invest in it.`;
   }
 
   if (percentage >= 70) {
