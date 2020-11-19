@@ -16,7 +16,7 @@ document.querySelector('.check').addEventListener('click', function () {
   if (percentage >= 30) {
     document.querySelector(
       '.message-paragraph'
-    ).textContent = `This relationship might work out between ${firstName} and ${crushName}, but the chance is very small. A successful relationship is possible, but you both have to work on it. Do not sit back and think that it will all work out fine, because it might not be working out the way you wanted it to. Spend as much time with each other as possible. Again, the chance of this relationship working out is very small, so even when you do work hard on it, it still might not work out.`;
+    ).textContent = `Oops! Sorry This relationship between ${firstName} and ${crushName} has no chance of working! Nature sometimes do play trick on us. Your Missing rib is out there. Keep On Searching!!!`;
   }
 
   if (percentage >= 50) {
@@ -28,11 +28,11 @@ document.querySelector('.check').addEventListener('click', function () {
   if (percentage >= 70) {
     document.querySelector(
       '.message-paragraph'
-    ).textContent = `A relationship between ${firstName} and ${crushName} has a reasonable chance of working out, but on the other hand, it might not. Your relationship may suffer good and bad times. If things might not be working out as you would like them to, do not hesitate to talk about it with the person involved. Spend time together, talk with each other.`;
+    ).textContent = `To be brave is to love unconditionally without expecting anything in return. ${firstName} and ${crushName} needs to put a little effort in your relationship. Things might not be working out as you would like them to, do not hesitate to talk about it with the person involved. Spend time together, talk with each other. `;
   } else {
     document.querySelector(
       '.message-paragraph'
-    ).textContent = `A relationship between ${firstName} and ${crushName} has a very good chance of being successful, but this doesn't mean that you don't have to work on the relationship. Remember that every relationship needs spending time together, talking with each other etc.`;
+    ).textContent = `${firstName} and ${crushName} are two people in love, alone, isolated from the world, that's beautiful. You look at each other and see the rest of your life in each others eyes. A God given blessing!. For you guys, Love is a promise; it is a souvenir, once given never forgotten.`;
   }
 });
 
