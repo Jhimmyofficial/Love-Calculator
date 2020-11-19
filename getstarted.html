@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Custom Styling-->
+    <link rel="stylesheet" href="css/getstarted.css" />
+
+    <!---Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c59041322b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>LovePath || MatchMaking your Loved Ones</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-box">
+        <p class="logo">LovePath</p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="left">
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input input-name"
+              placeholder="Your name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Your name</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input input-crush"
+              placeholder="Your Crush Name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Your Crush Name</label>
+          </div>
+          <button class="check check--animated">
+            Check! <i class="far fa-heart"></i>
+          </button>
+        </div>
+        <div class="right">
+          <div class="sub">
+            <div class="love">
+              <svg class="heart" viewBox="0 0 32 29.6">
+                <path
+                  d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                        c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"
+                />
+              </svg>
+              <div class="number">%</div>
+            </div>
+
+            <div class="love__img">
+              <img
+                class="img__rose"
+                src="images/rose.jpg"
+                alt="Image of a rose"
+              />
+            </div>
+          </div>
+
+          <div class="love__message">
+            <p class="message-paragraph">
+              “You've gotta dance like there's nobody watching, Love like you'll
+              never be hurt, Sing like there's nobody listening, And live like
+              it's heaven on earth.”
+            </p>
+          </div>
+
+          <button class="again again--animated">
+            Make Another Calculation <i class="far fa-heart"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>

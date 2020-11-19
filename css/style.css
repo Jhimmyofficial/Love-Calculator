@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-image: url(../images/val.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+/* LAYOUT */
+header {
+  height: 20vh;
+}
+
+.logo-box {
+  text-align: center;
+  padding: 3rem;
+}
+
+.logo {
+  color: rgb(252, 49, 49);
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  padding: 3% 10% 7%;
+}
+
+.love-quotes {
+  width: 50%;
+}
+
+.get-started {
+  width: 50%;
+  /* background-color: rgba(204, 214, 221, 0.5); */
+  text-align: center;
+  padding: 10% 0;
+}
+
+/* ELEMENTS STYLE */
+.paragraph {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 2.5rem;
+  font-family: 'Rakkas', cursive;
+  animation: moveInLeft 1s ease-out;
+}
+
+/* BUTTON STYLING */
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  animation: moveInBottom 1s ease-out;
+  font-size: 1.6rem;
+  border: 1px solid rgba(252, 49, 49, 0.479);
+  cursor: pointer;
+  color: rgb(252, 49, 49);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+/* ANIMATIONS */
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 37.5em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding: 0;
+  }
+
+  .paragraph {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 0 1.2rem;
+  }
+
+  .love-quotes {
+    width: 100%;
+  }
+
+  .get-started {
+    width: 100%;
+  }
+}
